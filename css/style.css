@@ -365,7 +365,7 @@ img {
 }
 
 #sidenavRight {
-  height: 100%;
+  height: 80%;
   width: 13em;
   position: fixed;
   z-index: 2;
@@ -377,6 +377,8 @@ img {
   box-shadow: 0 0 10px hsla(0, 0%, 0%, 0.4);
   overflow: scroll;
   scrollbar-width: none;
+  margin: 10px;
+  border-radius: 10px;
 }
 
 #sidenavRight a {
@@ -534,12 +536,6 @@ h2 {
   max-width: 30% !important;
 }
 
-.cocoNerd {
-  pointer-events: none;
-  margin-right: 1em;
-  max-height: 5.5em;
-}
-
 @keyframes slide-down {
   from {
     max-height: 0;
@@ -598,9 +594,6 @@ h2 {
     width: 100%;
     margin-left: 0;
     padding: 5em 1em 0 1em;
-  }
-  .cocoNerd {
-    display: none;
   }
   #sidenavLeft {
     width: 0;
