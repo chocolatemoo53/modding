@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="preload" href="/css/style.css" as="style" />
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/@fortawesome/fontawesome-free@6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="icon" href="/img/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png">
+    <link rel="canonical" href="https://modding.chocolatemoo53.com">
+    <script src="/javascript.js"></script>
+    <title>American Truck Simulator Modding Guide</title>
+    <meta name="keywords" content="Guide, Mod, Mods, Modding Guide, Stable, Performance, Crashing, Fixes, ATS, American Truck Sim, Skyrim, Skyrim Special Edition, Batman, Arkham Origins">
+    <meta name="description" content="Modding guides for various games to improve graphics or performance.">
+    <meta http-equiv='content-language' content='en-us'>
+    <meta name="twitter:card" value="summary_large_image">
+    <meta property="og:site_name" content="ChocolateMoo53">
+    <meta property="og:title" content="Modding Guides">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://modding.chocolatemoo53.com">
+    <meta property="og:image" content="https://modding.chocolatemoo53.com/ogimage.webp">
+    <meta property="og:description" content="An in depth guide explaining how to improve American Truck Simulator graphics and performance.">
+    <meta name="darkreader-lock">
+</head>
+
+<body>
+
+    <!-- Titlebar -->
+    <div class="titlecontainer">
+        <div id="sideButton" onclick="toggleNav()">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <p class="title">ChocolateMoo53 Modding Guides</p>
+    </div>
+
+    <!-- Left Sidebar -->
+    <div id="sidenavLeft">
+        <div>
+            <ul>
+                <li>
+                    <a href="/index.html">Home</a>
+                </li>
+                <li>
+                    <a href="/guides/ats/guide.html" class="active">ATS</a>
+                </li>
+                <li>
+                    <a href="/guides/origins/guide.html">Arkham Origins</a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- External Links -->
+        <div id="ext-links">
+            <ul>
+                <li>
+                    <a href="https://buymeacoffee.com/chocolatemoo53" target="_blank">
+                        Donate
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/chocolatemoo53/modding" target="_blank">
+                        GitHub
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Right Sidebar -->
+    <div id="sidenavRight" tabindex="2">
+        <ul>
+            <li>
+                <a href="#overview">Overview</a>
+            </li>
+            <li>
+                <a href="#requirements">Requirements</a>
+            </li>
+            <li>
+                <a href="#recommendedSpecs">Recommended Specs</a>
+            </li>
+            <li>
+                <a href="#gettingStarted">Getting Started</a>
+            </li>
+            <li>
+                <a href="#workshop">Steam Workshop</a>
+            </li>
+            <li>
+                <a href="#dxvk">DXVK</a>
+            </li>
+            <li>
+                <a href="#graphics">Graphics</a>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Content Marker/DIV -->
+    <div class="content" tabindex="3">
+
+        <!-- Introduction -->
+        <div class="section">
+            <h1>American Truck Simulator</h1>
+            <h3>Take a trip on the open road across a variety of American states.</h3>
+
+            <!-- Swiper -->
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide"><img src="/img/ats/image1.webp" alt="Slide 1"></div>
+                    <div class="swiper-slide"><img src="/img/ats/image2.webp" alt="Slide 2"></div>
+                    <div class="swiper-slide"><img src="/img/ats/image3.webp" alt="Slide 3"></div>
+                    <div class="swiper-slide"><img src="/img/ats/image4.webp" alt="Slide 4"></div>
+                    <div class="swiper-slide"><img src="/img/ats/image5.webp" alt="Slide 5"></div>
+                </div>
+            </div>
+
+            <blockquote>
+                <div>
+                    <p><b>Side note:</b><br>Screenshots above are running without any graphics mods using DXVK.</p>
+                </div>
+            </blockquote>
+
+            <hr>
+
+            <!-- Overview -->
+            <h2 id="overview">
+                Overview
+            </h2>
+            <p>
+                This guide enhances the game's visuals and introduces additional quality-of-life improvements during gameplay.
+                Essentially, it's a curated list of mods that enhance graphics, physics, and overall game experience in addition 
+                to optional map mods. Please note that maps typically require paid DLC and are included only if you wish to add 
+                extra content. Otherwise, you don't need anything else but the base game to enjoy. 
+            </p>
+            <!-- Requirements -->
+            <h2 id="requirements">
+                Requirements
+            </h2>
+            <ul>
+                <li>You will need around 30GB for mods and game content.</li>
+                <li>Windows 10 or higher (64-bit), Linux and Mac possibly work just as well (but some processes will be
+                    different).</li>
+                <li>A text editor like <a href="https://notepad-plus-plus.org/" target="_blank">Notepad++</a> is stongly
+                    recommended.</li>
+                <li>A computer capable of being able to play the game itself.</li>
+            </ul>
+            <!-- Recommended Specs -->
+            <h2 id="recommendedSpecs">
+                Recommended Specs
+            </h2>
+            <p>
+                The game is surprisingly intensive at times, so it is recommended to have the following specs:
+            </p>
+            <ul>
+                <li><b>CPU:</b> Any quad-core processor (2.5GHz or more).</li>
+                <li><b>RAM:</b> 8GB or more.</li>
+                <li><b>GPU:</b> A basic GTX 1080 will run it just fine but may experience stutter or lag with demanding
+                    mods/settings.</li>
+            </ul>
+            <p>
+                Optionally, a modern controller or a wheel. I am attempting to make or find a good controller config
+                which works well with the game and provides advanced features. 
+            </p>
+            <!-- Getting Started -->
+            <h2 id="gettingStarted">
+                Getting Started
+            </h2>
+            <p>
+                Once you're ready to begin, follow these steps to set up the game:
+            </p>
+            <ol>
+                <li>Download the game from <a href="https://store.steampowered.com/app/270880/American_Truck_Simulator/" target="_blank">Steam</a>.</li>
+                <li>Install the game and run it once to make sure it works.</li>
+                <li>Begin in-game setup of your profile.</li>
+            </ol>
+            <p>Then note your documents folder, inside is a folder where you will be able to install mods into simply
+                titled "mod" which allows for drag and drop installation of mods. This is required for mods which need a manual
+                installation.
+            </p>
+            <!-- Steam Workshop -->
+            <h2 id="workshop">
+                Steam Workshop
+            </h2>
+            <p>This section may be expanded in the future to suit a realistic economy playstyle.</p>
+            <p>
+                The game employs Steam workshop where you can download mods directly from others into your game. This is
+                the easiest way to install mods as it is a one-click install. However, some mods are not on the workshop
+                and require a manual installation. If you want to use the workshop, you will need to subscribe to the mod 
+                and it will automatically download into your game. You can then enable it in the mod manager in-game.             
+            </p>
+            <p>
+                To enable mods in-game, go to the main menu and click on the mod manager. From there, you can enable or
+                disable mods as you see fit by double clicking or clicking on the red button. If the mod is active, the
+                button becomes green. From there, you can adjust the load order/priority of the mods by simply clicking,
+                going to the bottom of the list and choosing the up or down arrow. The game is loading these mods From
+                top to bottom, so the top mod will load first and the bottom mod will load last. 
+            </p>
+
+            <p> 
+                From here, the game is modded and you can stop, but if you're wanting to improve performance and graphics
+                or, install different map mods for access to Canada or Mexico, continue to follow the guide.
+            </p>
+
+            <h3>Side Note: Trustworthy Mod Sites</h3>
+            <p>
+                If you're looking for mods outside of the Steam Workshop, you can use the following sites:
+            </p>
+
+            <ul>
+                <li>
+                    <p>
+                        <a href="https://forum.scssoft.com/" target="_blank">SCS Forums</a> is a site that has a variety of mods
+                        for the game. It's the official forum for the game developers and you can usually find mods which
+                        are up to date and safe to use.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <a href="https://truckymods.io/" target="_blank">Truckymods</a> is a third party but professional and
+                        official way to aquire mods for some authors. 
+                    </p>
+                </li>
+            </ul>
+
+            <p>
+                Some mod authors use file sharing sites like sharemods. These are usually safe but can have ads that
+                download malware. Be careful when downloading from these sites.
+            </p>
+
+            <hr>
+
+            <!-- DXVK -->
+            <h2 id="dxvk">
+                DXVK
+            </h2>
+            <p>
+                DXVK is a Vulkan-based translation layer for Direct3D 9/10/11 which allows running 3D applications on Linux
+                using Wine. On Windows, it usually improves performance, especially true for titles utilizing DirectX 9. 
+                ATS already seems to use DXVK when you're using Linux. However, you can use it on Windows by following these steps:
+            </p>
+
+            <blockquote>
+                <p><b>This may seem great but:</b><br>
+                Your GPU must support Vulkan in order for this to work and actual performance gains will vary.
+                </p>
+            </blockquote>
+
+            <ol>
+                <li>
+                    <p>Download the latest release from <a href="https://github.com/doitsujin/dxvk/releases/tag/latest/"
+                    target="_blank">GitHub</a>.</p>
+                </li>
+                <li>
+                    <p>
+                        Using 7-Zip, open the main archive, then the second one. Go into x64. Extract the d3d11.dll and dxgi.dll file into the game's directory
+                        via the Steam install folder (Program Files > Steam > steamapps > common) then go into the game folder then bin > win_x64. 
+                    </p>
+                </li>
+                <li>
+                    <p>Start the game through Steam which will prompt you to verify you're running it with DirectX 11 when booting up.</p>
+                </li>
+                <li>
+                    <p>Check back in the folder to see a new log file.</p>
+                </li>
+            </ol>
+
+            <!-- Graphics -->
+            <h2 id="graphics">
+                Graphics
+            </h2>
+            <p>
+                If you don't think your computer can handle graphics mods, you can skip this section. However, if you
+                think you can handle it, here are some mods to improve the graphics of the game.
+            </p>
+            <p>
+                Before installing any graphics mods, you're going to want to change your settings for the game
+                using Notepad++ which is optional but greatly improves looks.
+            </p>
+            <ol>
+                <li>
+                    <p>Go to: \Documents\American Truck Simulator</p>
+                </li>
+                <li>
+                    <p>Open "config.cfg"</p>
+                </li>
+                <li>
+                    <p>Change the following settings to match the following:</p>
+                    <ul>
+                        <li>
+                            <p>uset g_bloom_standard_deviation "0.5"</p>
+                        </li>
+                        <li>
+                            <p>uset g_bloom_override "0"</p>
+                        </li>
+                        <li>
+                            <p>uset g_bloom "0.5"</p>
+                        </li>
+                        <li>
+                            <p>uset r_buffer_page_size "30"</p>
+                        </li>
+                        <li>
+                            <p>uset g_reflection "3"</p>
+                        </li>
+                        <li>
+                            <p>uset shadow_texture_size "8192"</p>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <p>Save the file (CTRL+S) and close it.</p>
+                </li>
+                <li>
+                    <p>Run the game and see if some graphics settings say "custom" meaning they are in effect.</p>
+                </li>
+                <li>
+                    <p>Change scaling to 400%</p>
+                </li>
+            </ol>
+            <p>g_reflection may be hard to run at 3 so you can also lower it to 2.</p>
+            <h3>Graphics Mods</h3>
+            <p> 
+                By default, there is a graphics mod that comes with the Steam Workshop bundle.
+                However, there are some mods that can improve graphics even further. These are
+                optional as they cost money. 
+            </p>
+            <p>
+                If you plan to pay for one of these mods, remove Realistic Brutal Graphics And Weather from your list.
+            </p>
+            <ul>
+                <li>
+                    <p>
+                        Better Graphics: <a href="https://www.facebook.com/DamianSVW/">Project Next Gen</a> is a $30 mod
+                        that improves the graphics of the game. It is a complete overhaul of the game's graphics.
+                        You need to have a Facebook account and message the creator.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Best Graphics: JBX Graphics (not recommended) is a $90 mod which goes over 
+                        everything with large textures and changes lots of other smaller details
+                        like adding 4k-8k skyboxes. However, due to the price and the requirements 
+                        to run it, you probably shouldn't get it because as much as it does look nice, 
+                        Project Next Gen is much cheaper and does a similar job.
+                    </p>
+                    <p>
+                        Both requite manual installation which can be done with the mod folder.
+                    </p>
+                </li>
+            </ul>
+
+            <hr>
+
+            <!-- Map Mods -->
+
+            <h2 id="maps">
+                Maps
+            </h2>
+            <p>
+                Maps are a great way to add more content to the game. However, they require paid DLC to work. 
+                If you want to add more content to the game, you can install these mods.
+            </p>
+            <ul>
+                <li>
+                    <p>
+                        Canada: <a href="https://promods.net/setup.php?game=ats" target="_blank">ProMods Canada</a> is a mod that adds a small portion of Canada to the game. 
+                        It requires Oregon and Washington. It's the only widely supported and used Canada map. 
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Mexico: <a href="https://reformaats.com/" target="_blank">Reforma</a> is a group which makes map mods for ATS. Specifically, they allow for exploration
+                        into Mexico. This does require a few paid DLCs, namely: Montana, Utah, Colorado, Idaho, Oregon, Washington, New Mexico, Wyoming and Texas.
+                        Since this is a lot of requirements, you can find the DLC on sale to lighten the load on your wallet. Once you're ready to download you'll require Reforma
+                        Mega Resources and the main Reforma file which can be found under the downloads page. These are downloaded from TruckyMods. If you're using Promods,
+                        you'll need the "Promods & Reforma Background fix" and if you support through Patreon, they offer a few extra map mods on top of the main file. 
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        More States: <a href="https://truckymods.io/american-truck-simulator/maps/coast-to-coast" target="_blank">Coast to Coast</a> is a mod which expands the 
+                        entire map to include all 50 states. It requires all map DLCs and is a large download. However, compatiblity can be broken for some mods and may require 
+                        a patch to get working. Once you can get it set up, it provides hours of content and road trips to a variety of places. 
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Expansion: <a href="https://forum.scssoft.com/viewtopic.php?f=194&t=281638" target="_blank">Grand Canyon Rebuild</a> is a mod which improves the looks of
+                        the Grand Canyon. It add more detail to the area and makes it more realistic. It doesn't seem to require any extra DLC.
+                    </p>
+                </li>
+            </ul>
+
+            <hr>
+
+            <!-- Others/misc -->
+            
+            <h2 id="misc">
+                Miscellaneous mods
+            </h2>
+
+            <p>
+                These mods fit into a category but are not required for this guide. They require a manual download. They are not on the Steam Workshop.
+            </p>
+
+            <ul>
+                <li>
+                    <p>
+                        <a href="https://truckymods.io/american-truck-simulator/maps/real-companies-gas-stations-billboards-extended" target="_blank">ATS Real Companies Extended</a> 
+                        is a mod that improves the real company logos mod. You need both mods for it to work. It also requires Colorado and Texas to work. 
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <a href="https://www.modland.net/user/jazzycat" target="_blank">JazzyCat AI traffic mods</a> are a various collection of different AI vehicle mods which add more variety to the game. 
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <a href="https://grimesmods.wordpress.com/2017/05/04/frosty-winter-weather-mod-ats/" target="_blank"></a> is a simple mod that add snowy textures and frosty roads. It also changes 
+                        the weather to be snow/sleet, change pedestrian clothes, and changes daylight hours. It's a great addition for winter months. 
+                    </p>
+                </li>
+        </div>
+    </div>
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            loop: true,
+            effect: 'fade',
+            autoplay: {
+                delay: 10000,
+                disableOnInteraction: true,
+            },
+        });
+    </script>
+</body>
+</html>
